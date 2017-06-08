@@ -1,7 +1,75 @@
-:host {
+@import "../styles/vars.less";
+
+:host{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+header{
+    background-color: @heederBackgroundColor;
+    color: @heederColor;
+    text-align: center;
+    padding: 2em;
+    cursor: pointer;
+    z-index: 100;
+    flex-grow: 0;
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+        color: white;
+    }
+    @media only screen and (max-width: 767px) {
+        padding: 1em;
+        h1 {
+            font-size: 1.3em;
+        }
+        h4{
+            display: none;
+        }
+    }
+}
+
+footer{
+    background-color: @heederBackgroundColor;
+    color: @heederColor;
+    font-size: .5em;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 5px;
+    .link, .link:visited, .link:hover {
+        color: #fff;
+        overflow-y: auto;
+    }
+}
+
+a, a:visited, a:hover {
+    color: @linkColor;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: @hColor;
+}
+
+.content{
     padding: 20px;
     flex-grow: 1;
     overflow-y: auto;
     display: flex;
-    flex-direction: column;
+    flex-grow: 1;
+}
+
+.innerContent{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.innerContent > *:last-child{
+    margin-bottom: 5em;
 }

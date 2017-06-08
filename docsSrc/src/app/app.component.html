@@ -1,23 +1,13 @@
-<p>The world, and computer software is no different, is evolving at an increasing pace. Everyday, a new technology is born to things easier than the existing, group functionality of existing or just plain-ol' solve problems of the exisintg, obviously, creating new (better) ones. To make a wise, or educated, decision is virtually impossible. One would have to try everything there is, at that moment in time, knowing the decision is out-dated, the moment it is made.</p>
-
-<p>Here various options and combinations will be tested to help (me) make a (less bad) decision.</p>
-
-<h1>Determinations</h1>
-<p>There has to be some choices made before hand, if for nothing else, to narrow the spectrum. These are:</p>
-<ul>
-    <li>No UI/UX logic on the server side;</li>
-    <li>The server only comunicates data and resources to the client;</li>
-    <li>No business logic on the client side.</li>
-</ul>
-
-<h1>Layers</h1>
-<p>A <em>modern</em> web solution (site or application as some call it), consists of many layers that cater for different concerns. Some technologies span more than one layer but the specific concern of the layer still exists. Here they are:</p>
-<ul>
-    <li>Client UI Rendering</li>
-    <li>Client application logic</li>
-    <li>DNS</li>
-    <li>Hosting</li>
-    <li>Server static content providing</li>
-    <li>Server synamic content providing</li>
-    <li>Server data persistency</li>
-</ul>
+<header routerLink="/">
+    <h1>A World Wide Web of Options</h1>
+  </header>
+  <section class="content">
+    <section class="innerContent">
+      <router-outlet>
+      </router-outlet>
+    </section>
+  </section>
+  <footer>
+    <span class="copy">&copy; 2017 Bigsby</span>
+    <a class="link" target="_blank" href="http://bigsbyspot.org">about the author</a>
+  </footer>
